@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.brand img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.branding {
+    font-weight: bolder;
+    font-size: 1.3rem
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background-color: black;
+    color: white;
+    padding: 6px;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.container {
+    min-height: 75vh;
+    font-family: 'Varela Round', sans-serif;
+    background-color: black;
+    color: white;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#progressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItem {
+    display: flex;
+    background-color: white;
+    color: black;
+    width: 50%;
+    height: 50px;
+    border-radius: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    margin-top: 10px;
+}
+
+.songItem img {
+    width: 40px;
+    border-radius: 100px;
+}
+
+.timestamp {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 20px;
+}
+
+.songInfo img {
+    width: 60px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    margin-top: 20px;
+    font-family: 'Varela Round', sans-serif;
+}
